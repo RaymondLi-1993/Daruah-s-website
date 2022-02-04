@@ -1,11 +1,16 @@
+import { ParallaxProvider } from 'react-scroll-parallax';
 import NavBar from "./navBar";
-import Parallax from "./Parallax";
+import ParallaxComp from "./Parallax";
+
 
 function App() {
   return (
     <div className="w-screen h-screen m-0 p-0">
       <NavBar />
-      <Parallax />
+      <ParallaxProvider>
+      <ParallaxComp />
+      </ParallaxProvider>
+
     </div>
   );
 }
