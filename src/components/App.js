@@ -1,6 +1,7 @@
 import NavBar from "./navBar";
 import ParallaxComp from "./Parallax";
 import AboutMe from "./aboutMe";
+import ContactMe from "./contactMe";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <ParallaxComp />
       <div className="h-5/6 w-full"></div>
       <AboutMe/>
+      <ContactMe />
     </div>
   );
 }
