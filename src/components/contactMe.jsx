@@ -29,9 +29,9 @@ const ContactMe = () => {
 
 
     return (
-        <div id="contactMe" className="w-full h-2/3 bg-sandal">
+        <div id="contactMe" className="w-full h-2/3 bg-pineMist">
           <div className="w-3/4 md:w-full h-full flex flex-col items-center justify-center m-auto ">
-            <div className="text-white text-5xl font-Nanum mt-8 font-bold">Contact Me</div>
+            <div className="text-sandal text-5xl font-Nanum mt-8 font-bold">Contact Me</div>
             {sending ? (
               <div className="w-full h-2/3 container m-auto text-center text-black text-5xl font-Nunito">
                 Message successfully sent!
@@ -79,7 +79,7 @@ const ContactMe = () => {
                   <input
                     type="submit"
                     value="Send"
-                    className="w-64 p-2 m-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded border border-black shadow-md  bg-sandal cursor-pointer text-white "
+                    className="w-64 p-2 m-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded border border-black shadow-md  bg-sandal cursor-pointer text-white font-Nanum text-lg font-bold"
                   />
                 </div>
               </form>
