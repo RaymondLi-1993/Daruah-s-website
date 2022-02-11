@@ -12,7 +12,8 @@ module.exports = {
         sandal:"#AC8C73"
       },
       fontFamily:{
-        "Nanum":["Nanum Myeong", "san-serif"]
+        "Nanum":["Nanum Myeong", "san-serif"],
+        "openSans":["Open Sans, san-serif"]
       },
     },
   },

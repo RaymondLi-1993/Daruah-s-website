@@ -1,4 +1,5 @@
 import { ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax';
+import NavBar from "./navBar";
 import AboutMe from "./aboutMe";
 import ContactMe from "./contactMe";
 import Scene from "../Images/scenery.jpg";
@@ -24,13 +25,18 @@ const ParallaxComp = () => {
       className="h-full"
     >
     </ParallaxBanner>
+    <NavBar />
         <div style={{backgroundImage:`url(${Background})`}} className="md:flex-row md:h-3/5 w-full flex flex-col p-3 bg-cover bg-no-repeat h-full">
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
                 <div className="relative">
-                    <div className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 absolute inset-0 bg-white rounded-xl blur"></div>
+                    <div className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-5 absolute inset-0 bg-black rounded-xl blur-sm"></div>
                     <img alt="Daurah" className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 rounded-lg relative" src={Hero}/> 
-                </div>       
-                <p className="p-10 leading-loose text-base font-Nanum font-thin text-pineMist">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
+                </div>   
+                <div className="relative">
+                <div className="h-60 lg:h-40 mt-5 absolute inset-0 bg-black rounded-lg blur-xl"></div>  
+                <p className="p-5 pb-2 leading-loose text-base font-sans relative text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>
+                </div>    
+                  
           </div>
    
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
