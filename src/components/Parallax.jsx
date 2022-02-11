@@ -22,7 +22,7 @@ const ParallaxComp = () => {
           ),
         },
       ]}
-      className="h-full bg-cover"
+      className="h-full"
     >
       <NavBar />
     </ParallaxBanner>
@@ -32,7 +32,7 @@ const ParallaxComp = () => {
                     <div className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 absolute inset-0 bg-white rounded-xl blur"></div>
                     <img alt="Daurah" className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 rounded-lg relative" src={Hero}/> 
                 </div>       
-                <p className="p-10 leading-loose text-sm md:text-base font-Nanum font-thin text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
+                <p className="p-10 leading-loose text-base font-Nanum font-thin text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
           </div>
    
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">

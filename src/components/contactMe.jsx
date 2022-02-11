@@ -85,7 +85,7 @@ const ContactMe = () => {
               </form>
             )}
           </div>
-          <h1 className="text-white font-Nunito text-center pt-2 bg-black">
+          <h1 className="text-pineMist font-Nunito text-center pt-2 bg-black">
             Designed and Created by Raymond Li © {`${year.getFullYear()}`}.
           </h1>
         </div>
