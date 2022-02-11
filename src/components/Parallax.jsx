@@ -1,4 +1,6 @@
 import { ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax';
+import AboutMe from "./aboutMe";
+import ContactMe from "./contactMe";
 import Scene from "../Images/scenery.jpg";
 import Daurah from "../Images/daurah.jpg";
 import Hero from "../Images/Hero.jpg"
@@ -14,7 +16,7 @@ const ParallaxComp = () => {
           speed: -15,
           children: (
             <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-8xl text-white font-thin">Daurah Bernadette</h1>
+              <h1 className="md:text-8xl text-center text-6xl text-white font-thin font-sans">Daurah Bernadette</h1>
             </div>
           ),
         },
@@ -25,17 +27,17 @@ const ParallaxComp = () => {
         <h1 className="text-8xl text-white font-thin"></h1>
       </div>
     </ParallaxBanner>
-        <div style={{backgroundImage:`url(${Background})`}} className="w-full flex flex-row h-3/5 p-3 bg-cover bg-no-repeat">
-          <div className="w-1/2 h-full p-5">
+        <div style={{backgroundImage:`url(${Background})`}} className="md:flex-row md:h-3/5 w-full flex flex-col p-3 bg-cover bg-no-repeat h-full">
+          <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
                 <div className="relative">
-                    <div className="w-2/5 h-full m-auto p-2 absolute inset-0 bg-white rounded-xl blur"></div>
-                    <img className="w-2/5 h-4/6 m-auto p-2 rounded-lg relative" src={Hero}/> 
+                    <div className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 absolute inset-0 bg-white rounded-xl blur"></div>
+                    <img className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 rounded-lg relative" src={Hero}/> 
                 </div>       
-                <p className="p-12 leading-normal text-base font-sans font-semibold text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
+                <p className="p-6 leading-loose text-sm md:text-base font-sans font-semibold  text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
           </div>
    
-          <div className="w-1/2 h-2/3 flex justify-center items-center p-5 opacity-75">
-          <iframe className="w-full h-full rounded-lg shadow-xl" src="https://open.spotify.com/embed/artist/0dW3wt00zZKptwhSgOtLOt?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
+          <iframe className="w-full h-full rounded-lg shadow-xl opacity-75" src="https://open.spotify.com/embed/artist/0dW3wt00zZKptwhSgOtLOt?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           </div>
         </div>
     <ParallaxBanner
@@ -43,6 +45,8 @@ const ParallaxComp = () => {
       className="h-60"
     />
     </ParallaxProvider>
+    <AboutMe/>
+    <ContactMe />
     </div>
 }
 
