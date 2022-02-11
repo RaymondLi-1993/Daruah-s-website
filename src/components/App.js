@@ -1,4 +1,3 @@
-import NavBar from "./navBar";
 import ParallaxComp from "./Parallax";
 
 function App() {
