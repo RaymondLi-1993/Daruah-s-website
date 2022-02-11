@@ -1,5 +1,4 @@
 import { ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax';
-import NavBar from "./navBar";
 import AboutMe from "./aboutMe";
 import ContactMe from "./contactMe";
 import Scene from "../Images/scenery.jpg";
@@ -24,7 +23,6 @@ const ParallaxComp = () => {
       ]}
       className="h-full"
     >
-      <NavBar />
     </ParallaxBanner>
         <div style={{backgroundImage:`url(${Background})`}} className="md:flex-row md:h-3/5 w-full flex flex-col p-3 bg-cover bg-no-repeat h-full">
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
