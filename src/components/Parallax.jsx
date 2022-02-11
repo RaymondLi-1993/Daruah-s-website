@@ -1,4 +1,5 @@
 import { ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax';
+import NavBar from "./navBar";
 import AboutMe from "./aboutMe";
 import ContactMe from "./contactMe";
 import Scene from "../Images/scenery.jpg";
@@ -16,15 +17,14 @@ const ParallaxComp = () => {
           speed: -15,
           children: (
             <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="md:text-8xl text-center text-6xl text-white font-thin font-sans">Daurah Bernadette</h1>
+              <h1 className="md:text-8xl text-center text-6xl text-white font-thin font-Nanum">Daurah Bernadette</h1>
             </div>
           ),
         },
       ]}
       className="h-full"
     >
-      <div className="absolute inset-0 flex items-center justify-center">
-      </div>
+      <NavBar />
     </ParallaxBanner>
         <div style={{backgroundImage:`url(${Background})`}} className="md:flex-row md:h-3/5 w-full flex flex-col p-3 bg-cover bg-no-repeat h-full">
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
@@ -32,7 +32,7 @@ const ParallaxComp = () => {
                     <div className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 absolute inset-0 bg-white rounded-xl blur"></div>
                     <img alt="Daurah" className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 rounded-lg relative" src={Hero}/> 
                 </div>       
-                <p className="p-6 leading-loose text-sm md:text-base font-sans font-semibold  text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
+                <p className="p-6 leading-loose text-sm md:text-base font-Nanum font-semibold text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
           </div>
    
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">

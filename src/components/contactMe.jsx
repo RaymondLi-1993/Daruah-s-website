@@ -29,9 +29,9 @@ const ContactMe = () => {
 
 
     return (
-        <div id="contactMe" className="w-full h-2/3 bg-pineMist ">
+        <div id="contactMe" className="w-full h-2/3 bg-sandal">
           <div className="w-3/4 md:w-full h-full flex flex-col items-center justify-center m-auto ">
-            <div className="text-black text-5xl font-Nunito mt-8">Contact Me</div>
+            <div className="text-white text-5xl font-Nanum mt-8 font-bold">Contact Me</div>
             {sending ? (
               <div className="w-full h-2/3 container m-auto text-center text-black text-5xl font-Nunito">
                 Message successfully sent!
@@ -44,7 +44,7 @@ const ContactMe = () => {
                 <div className="m-2 md:w-3/4 w-full h-12">
                   <input
                     placeholder="Subject"
-                    className="w-full h-full mx-2 rounded-lg border-blue-900 border-4 p-4 focus:border-blue-500 text-lg font-Nunito font-bold"
+                    className="w-full h-full mx-2 rounded-lg border-sandal border-2 p-4 focus:border-blue-500 text-lg font-Nunito font-bold"
                     type="text"
                     name="subject"
                     required
@@ -53,7 +53,7 @@ const ContactMe = () => {
                 <div className="m-2 md:w-3/4 w-full h-12 flex flex-row">
                   <input
                     placeholder="Email"
-                    className="w-1/2 h-full mx-2 rounded-lg border-blue-900 border-4 p-4 focus:border-blue-500 text-lg font-Nunito"
+                    className="w-1/2 h-full mx-2 rounded-lg border-sandal border-2 p-4 focus:border-blue-500 text-lg font-Nunito"
                     type="email"
                     name="Email"
                     required
@@ -61,7 +61,7 @@ const ContactMe = () => {
                   <span className="w-1/2 h-12">
                     <input
                       placeholder="Name"
-                      className="w-full h-full mx-2 rounded-lg border-blue-900 border-4 p-4 focus:border-blue-500 text-lg font-Nunito"
+                      className="w-full h-full mx-2 rounded-lg border-sandal border-2 p-4 focus:border-blue-500 text-lg font-Nunito"
                       type="text"
                       name="Name"
                       required
@@ -71,7 +71,7 @@ const ContactMe = () => {
                 <div className="m-2 md:w-3/4 w-full h-52">
                   <textarea
                     placeholder="Message"
-                    className="w-full h-full mx-2 rounded-lg border-blue-900 border-4 p-4 focus:border-blue-500 text-lg font-Nunito"
+                    className="w-full h-full mx-2 rounded-lg border-sandal border-2 p-4 focus:border-blue-500 text-lg font-Nunito"
                     name="Message"
                   />
                 </div>
@@ -79,14 +79,14 @@ const ContactMe = () => {
                   <input
                     type="submit"
                     value="Send"
-                    className="w-64 p-2 m-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded border border-black shadow-md  bg-red-600 hover:bg-red-400 cursor-pointer "
+                    className="w-64 p-2 m-2 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 rounded border border-black shadow-md  bg-sandal cursor-pointer text-white "
                   />
                 </div>
               </form>
             )}
           </div>
-          <h1 className="text-black font-Nunito text-center pt-2 bg-pineMist">
-            Designed and created By Raymond Li © {`${year.getFullYear()}`}.
+          <h1 className="text-white font-Nunito text-center pt-2 bg-black">
+            Designed and Created by Raymond Li © {`${year.getFullYear()}`}.
           </h1>
         </div>
       );
