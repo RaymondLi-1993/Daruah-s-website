@@ -24,20 +24,19 @@ const ParallaxComp = () => {
       className="h-full"
     >
       <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-8xl text-white font-thin"></h1>
       </div>
     </ParallaxBanner>
         <div style={{backgroundImage:`url(${Background})`}} className="md:flex-row md:h-3/5 w-full flex flex-col p-3 bg-cover bg-no-repeat h-full">
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
                 <div className="relative">
                     <div className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 absolute inset-0 bg-white rounded-xl blur"></div>
-                    <img className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 rounded-lg relative" src={Hero}/> 
+                    <img alt="Daurah" className="lg:w-60 lg:h-60 w-0 h-0 invisible md:visible m-auto p-2 rounded-lg relative" src={Hero}/> 
                 </div>       
                 <p className="p-6 leading-loose text-sm md:text-base font-sans font-semibold  text-white">Daurah is currently releasing a project consisting of 4 singles called ‘soft spot demos’. all completely produced and performed by her. The project shows the journey of self-discovery through the inner turmoils that come from heartbreak. Join Daurah Bernadette on this journey by tuning in here.</p>  
           </div>
    
           <div className="w-full h-1/2 md:w-1/2 md:h-full p-5">
-          <iframe className="w-full h-full rounded-lg shadow-xl opacity-75" src="https://open.spotify.com/embed/artist/0dW3wt00zZKptwhSgOtLOt?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe title="spotify player" className="w-full h-full rounded-lg shadow-xl opacity-75" src="https://open.spotify.com/embed/artist/0dW3wt00zZKptwhSgOtLOt?utm_source=generator&theme=0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
           </div>
         </div>
     <ParallaxBanner
